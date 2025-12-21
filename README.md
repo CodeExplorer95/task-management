@@ -76,3 +76,5 @@ allow read: if request.auth != null && resource.data.owner == request.auth.uid;
 // Dark theme toogle and logout present in setting
 
 //ALL TASK DONE WHICH IS GIVEN IN ASSIGNMENT
+
+//I dont have Macbook so i cannot able to setup for ios app and test the application..ios app setup isnot done
