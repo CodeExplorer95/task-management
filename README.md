@@ -10,6 +10,8 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 //React native version is 0.80.2
 
+//Use sqlite-storage fore offline data storage
+
 ■ Libraries used --------------
 "@notifee/react-native": "^9.1.8",
 "@react-native-async-storage/async-storage": "^1.24.0",
