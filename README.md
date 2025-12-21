@@ -57,6 +57,8 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
                  2.npx rect-native start  ---for metro server running
                  3. npx react-native run-android ---for run and build the app
 
+//Also add validation
+
 for ios 1.cd ios
 pod install
 2.npx react-native run-ios
