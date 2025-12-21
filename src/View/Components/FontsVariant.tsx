@@ -1,0 +1,17 @@
+export const FontsVariant = {
+  Light: 'Poppins-Black',
+  ExtraLight: 'Poppins-ExtraLight',
+  Regular: 'Poppins-Regular',
+  Medium: 'Poppins-Medium',
+  Semibold: 'Poppins-SemiBold',
+  Bold: 'Poppins-Bold',
+  ExtraBold: 'Poppins-ExtraBold',
+  Okaluera: 'Okaluera',
+  ManropeBold: 'Manrope-Bold',
+  ManropeExtraBold: 'Manrope-ExtraBold.',
+  ManropeExtraLight: 'Manrope-ExtraLight',
+  ManropeLight: 'Manrope-Light',
+  ManropeMedium: 'ManropeMedium',
+  ManropeRegular: 'Manrope-Regular',
+  ManropeSemiBold: 'Manrope-SemiBold',
+};

@@ -1,0 +1,32 @@
+import {ColorName, ColorObject} from './ColorName';
+
+export const light: ColorObject = {
+  [ColorName.default_001]: '#779341',
+  [ColorName.default_0011]: '#FEF2EB',
+  [ColorName.default_00111]: '#FFF6E6',
+  [ColorName.default_002]: '#F27D30',
+  [ColorName.default_003]: '#D1651C',
+  [ColorName.danger_001]: '#FD0202',
+  [ColorName.danger_002]: '#C90707',
+  [ColorName.danger_003]: '#FF0000',
+  [ColorName.warning_001]: '#F5B333',
+  [ColorName.primary_001]: '#355DEE',
+  [ColorName.secondary_001]: '#FFFFFF',
+  [ColorName.secondary_002]: '#F2F2F2',
+  [ColorName.secondary_003]: '#F5F5F5',
+  [ColorName.secondary_004]: '#ADADAD',
+  [ColorName.secondary_005]: '#CCCCCC',
+  [ColorName.secondary_006]: '#EEEEEE',
+  [ColorName.secondary_007]: '#858585',
+  [ColorName.secondary_008]: '#777777',
+  [ColorName.secondary_009]: '#AAAAAA',
+  [ColorName.secondary_010]: '#392033',
+
+  [ColorName.secondary_095]: '#888888',
+  [ColorName.secondary_096]: '#444444',
+  [ColorName.secondary_097]: '#F8F8F8',
+  [ColorName.secondary_098]: '#999999',
+  [ColorName.secondary_099]: '#343434',
+  [ColorName.secondary_100]: '#000000',
+  [ColorName.secondary_101]: '#000000',
+};
