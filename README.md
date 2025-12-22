@@ -80,3 +80,36 @@ allow read: if request.auth != null && resource.data.owner == request.auth.uid;
 //ALL TASK DONE WHICH IS GIVEN IN ASSIGNMENT
 
 //I dont have Macbook so i cannot able to setup for ios app and test the application..ios app setup isnot done
+
+## iOS setup notes
+
+This project includes Android notification and FCM wiring; to enable the same on iOS you must complete a few manual steps (requires a Mac/Xcode):
+
+1. Add Firebase config
+
+   - Download `GoogleService-Info.plist` from your Firebase console and add it to `ios/TaskManagement` in Xcode (Ensure it's included in the app target).
+
+2. CocoaPods
+
+   - cd ios && pod install
+
+3. Enable Push Notifications
+
+   - In Xcode, select the app target > Signing & Capabilities > add `Push Notifications` and `Background Modes` (check `Remote notifications`).
+
+4. AppDelegate
+
+   - The AppDelegate.swift in this repo configures Firebase and registers for remote notifications. Ensure it matches and that `Firebase` pods are installed.
+
+5. Notifee & Local Notifications
+
+   - Follow Notifee iOS installation docs: https://notifee.app/react-native/docs/installation
+
+6. APNs Certificate / Key
+
+   - Upload your APNs Auth Key to the Firebase Console (Project Settings -> Cloud Messaging) so Firebase can send notifications to APNs.
+
+7. Run on device
+   - Push notifications require a real device (not simulator) to test remote notifications.
+
+If you want, I can try to automate some plist or project changes, but adding your `GoogleService-Info.plist` and enabling the capabilities must be done in Xcode on macOS.
