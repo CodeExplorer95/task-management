@@ -94,10 +94,17 @@ allow read: if request.auth != null && resource.data.owner == request.auth.uid;
    - cd ios && pod install
 
 
-// run command yarn run ios or npx react-native run-ios
+
+
+// run command --------yarn run ios or npx react-native run-ios
 also buid from xcode.
 
+
+
+
 3. Enable Push Notifications
+
+ 
 
  
 4. AppDelegate
