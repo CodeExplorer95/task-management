@@ -1,15 +1,12 @@
-// Example Firebase Cloud Function that sends reminder notifications to device tokens stored in Firestore
-// Deploy using the firebase-tools CLI from the `functions` folder.
+
 
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 admin.initializeApp();
 const db = admin.firestore();
 
-// This function can be triggered via HTTP (or scheduled using Pub/Sub cron)
 exports.sendReminders = functions.https.onRequest(async (req, res) => {
   try {
-    // Query for tasks that are due (this example expects tasks stored in Firestore with reminderAt field)
     const now = Date.now();
     const tasksSnap = await db.collection('tasks').where('reminderAt', '<=', now).get();
     if (tasksSnap.empty) {
@@ -17,7 +14,6 @@ exports.sendReminders = functions.https.onRequest(async (req, res) => {
       return;
     }
 
-    // Collect device tokens
     const tokensSnap = await db.collection('deviceTokens').get();
     const tokens = tokensSnap.docs.map(d => d.id).filter(Boolean);
     if (!tokens.length) {
