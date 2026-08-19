@@ -74,7 +74,7 @@ allow read: if request.auth != null && resource.data.owner == request.auth.uid;
 }
 }
 }
-
+//
 // Dark theme toogle and logout present in setting
 
 //ALL TASK DONE WHICH IS GIVEN IN ASSIGNMENT
